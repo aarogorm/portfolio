@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/static/js/main.e2efcc06.js",
+    "reactPlayerPreview.js": "/static/js/reactPlayerPreview.9b04ed65.chunk.js",
+    "index.html": "/index.html",
+    "main.e2efcc06.js.map": "/static/js/main.e2efcc06.js.map",
+    "reactPlayerPreview.9b04ed65.chunk.js.map": "/static/js/reactPlayerPreview.9b04ed65.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.e2efcc06.js"
+  ]
+}
