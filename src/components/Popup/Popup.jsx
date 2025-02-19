@@ -57,7 +57,7 @@ const WindowsXPPopup = ({
         width: width,
         backgroundColor: '#ECE9D8',
         boxShadow: '2px 2px 8px rgba(0, 0, 0, 0.2)',
-        border: '1px solid #0054E9',
+        border: '1px solidrgb(19, 0, 233)',
         borderRadius: '3px 3px 0 0',
         fontFamily: 'Tahoma, Arial, sans-serif',
         zIndex: zIndex
@@ -70,7 +70,7 @@ const WindowsXPPopup = ({
           alignItems: 'center',
           justifyContent: 'space-between',
           padding: '3px 5px 3px 8px',
-          background: 'linear-gradient(180deg, #0058E6 0%, #3F8CFF 5%, #0054E9 100%)',
+          background: 'linear-gradient(180deg,rgb(42, 0, 230) 0%,rgb(63, 76, 255) 5%,rgb(62, 0, 233) 100%)',
           color: 'white',
           borderRadius: '2px 2px 0 0',
           cursor: 'move',
