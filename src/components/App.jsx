@@ -1,6 +1,5 @@
-import React from "react";
+import React from 'react';
 import { Desktop } from './Desktop';
-import ExamplePopup from "./Popup/Popup";
 
 function App() {
   return (

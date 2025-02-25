@@ -10,6 +10,7 @@
     "axios": "^1.7.9",
     "cors": "^2.8.5",
     "express": "^4.21.2",
+    "globals": "^16.0.0",
     "lucide-react": "^0.474.0",
     "node-fetch": "^3.3.2",
     "oidc-client-ts": "^3.1.0",
@@ -24,6 +25,9 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-transform-private-property-in-object": "^7.25.9",
     "concurrently": "^9.1.2",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "nodemon": "^3.1.9",
     "typescript": "3.3.3"
   },
@@ -33,7 +37,10 @@
     "dev": "concurrently \"npm run server\" \"npm run start\"",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint src",
+    "lint:all": "eslint .",
+    "lint:fix": "eslint src --fix"
   },
   "browserslist": [
     ">0.2%",

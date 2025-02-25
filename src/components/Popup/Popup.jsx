@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
-const WindowsXPPopup = ({ 
-  title = "Message", 
-  children, 
-  onClose = () => {},
+const WindowsXPPopup = ({
+  title = "Message",
+  children,
+  onClose = () => { },
   width = "400px",
   initialPosition = { x: 100, y: 100 },
   zIndex = 1,
-  onFocus = () => {}
+  onFocus = () => { }
 }) => {
   const [position, setPosition] = useState(initialPosition);
   const [isDragging, setIsDragging] = useState(false);
@@ -47,9 +47,8 @@ const WindowsXPPopup = ({
       document.removeEventListener('mouseup', handleMouseUp);
     };
   }, [isDragging, dragOffset]);
-  console.log(title, zIndex);
   return (
-    <div 
+    <div
       style={{
         position: 'absolute',
         left: `${position.x}px`,
@@ -64,7 +63,7 @@ const WindowsXPPopup = ({
       }}
       onClick={onFocus}
     >
-      <div 
+      <div
         style={{
           display: 'flex',
           alignItems: 'center',
@@ -82,7 +81,7 @@ const WindowsXPPopup = ({
           fontSize: '13px',
           fontWeight: '600',
         }}>{title}</div>
-        <button 
+        <button
           onClick={(e) => {
             e.stopPropagation();
             onClose();
@@ -124,7 +123,7 @@ const WindowsXPPopup = ({
         padding: '16px',
         backgroundColor: '#ECE9D8'
       }}>
-        <button 
+        <button
           onClick={onClose}
           style={{
             padding: '4px 16px',
